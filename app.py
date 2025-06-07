@@ -1,6 +1,6 @@
 import streamlit as st
 import pickle
-from nltk import word_tokenize
+import nltk
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 nltk.download('punkt')
@@ -14,7 +14,7 @@ def transformation_of_text(text):
     text = text.lower()
 
     # create word tokens
-    text = word_tokenize(text)  # Now works!
+    text = nltk.word_tokenize(text)  # Now works!
 
     # remove special characters
     y = []
