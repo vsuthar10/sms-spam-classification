@@ -4,7 +4,7 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 nltk.download('punkt')
-nltk.download('punkt_table')
+nltk.download('punkt_tab')
 
 ps = PorterStemmer()
 
